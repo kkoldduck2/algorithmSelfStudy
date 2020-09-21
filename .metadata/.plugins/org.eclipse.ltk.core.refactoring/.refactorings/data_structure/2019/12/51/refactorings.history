@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;dinamicProgramming.SequenceSub&apos; to &apos;SequenceSum&apos;&#x0D;&#x0A;- Original project: &apos;data_structure&apos;&#x0D;&#x0A;- Original element: &apos;dinamicProgramming.SequenceSub&apos;&#x0D;&#x0A;- Renamed element: &apos;dinamicProgramming.SequenceSum&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SequenceSub&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;dinamicProgramming{SequenceSub.java[SequenceSub" matchStrategy="1" name="SequenceSum" qualified="false" references="true" similarDeclarations="false" stamp="1576648187748" textual="false" version="1.0"/>
+</session>

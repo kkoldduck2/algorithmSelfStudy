@@ -1,0 +1,41 @@
+package study_beakjoon;
+
+import java.util.Scanner;
+
+//https://www.acmicpc.net/problem/2294
+public class _05_2294 {
+//	public static int makeK(a,k,d) {
+//		
+//	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int k = sc.nextInt();
+		int[] a= new int[n];
+		int[] d = new int[k+1]; // k원을 만들 수 있는 최소 개수 memoization
+		
+		for(int i=0; i<n; i++) {
+			a[i] = sc.nextInt();
+			d[a[i]] = 1;
+		}
+		for(int i=0; i<k+1; i++) {
+			for(int j=0; j<a.length; j++) {
+				if(i-a[j]>0) {
+					int temp = d[i-a[j]];
+					if(temp < 1) {	// 존재하지 않으면
+						d[i] =-1;
+					}else {
+						d[i] = temp+1;
+						System.out.println("검사:"+d[i]);
+					}
+				}
+			}
+			
+		}
+		
+		// 최소값 단, -1 제외
+		
+		System.out.println("정답 :"+d[k]);
+		
+	}
+}

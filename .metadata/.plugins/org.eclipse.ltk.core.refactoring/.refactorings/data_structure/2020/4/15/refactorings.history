@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;study_programmers.Find_PrimeNum&apos; to &apos;BruteForce_Find_PrimeNum&apos;&#x0D;&#x0A;- Original project: &apos;data_structure&apos;&#x0D;&#x0A;- Original element: &apos;study_programmers.Find_PrimeNum&apos;&#x0D;&#x0A;- Renamed element: &apos;study_programmers.BruteForce_Find_PrimeNum&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Find_PrimeNum&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;study_programmers{Find_PrimeNum.java[Find_PrimeNum" matchStrategy="1" name="BruteForce_Find_PrimeNum" qualified="false" references="true" similarDeclarations="false" stamp="1586069029503" textual="false" version="1.0"/>
+</session>

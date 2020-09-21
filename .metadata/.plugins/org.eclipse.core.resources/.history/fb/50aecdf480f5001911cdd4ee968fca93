@@ -1,0 +1,59 @@
+package programmers;
+
+import java.util.Arrays;
+
+class Heap{
+	class Node{
+		int data;
+		Node left;
+		Node right;
+		Node(int data) {
+			this.data= data;
+		}
+	}
+	
+	Node root;
+	
+	// 주어진 배열을 바탕으로 이진검색트리 생성 -> root 노드 반환
+	public void makeTree(int[] arr){
+		root = makeTreeR(arr, 0, arr.length-1);
+	}
+	
+	// 재귀 호출
+	public Node makeTreeR(int[] arr, int start, int end) {
+		if(start>end) return null;
+		
+		int mid = (start + end)/2;
+		Node node = new Node(arr[mid]);
+		node.left=makeTreeR(arr, 0, mid-1);
+		node.right=makeTreeR(arr,mid+1,end);
+		return node;
+	}
+	
+	
+	// root node와 node.left 뺸다 -> 새로운 숫자 만든다음 -> 삽입 -> 다시 정렬
+	
+	
+}
+class Solution {
+    public int solution(int[] scoville, int K) {
+        int answer = 0;
+        // 힙으로 변환
+        // 정렬 (작 -> 큰)   : binary heaps(Min -heaps)
+        // 앞에서 두개 꺼냄 (삭제)-> 새로운 숫자 만듦(삽입)
+        // 다시 정렬  
+        // 반복 (리스트의 모든 값이 k보다 커질 때 까지 )
+        Arrays.sort(scoville);
+        Heap h = new Heap();
+        h.makeTree(scoville);
+        
+        
+        return answer;
+    }
+}
+
+public class Heap_hotter {
+	public static void main(String[] args) {
+		
+	}
+}
